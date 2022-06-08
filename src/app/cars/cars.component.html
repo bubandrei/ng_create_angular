@@ -1,6 +1,11 @@
 <!-- <p>cars works!</p>
 <app-car></app-car>
 <app-car></app-car> -->
-<button [disabled] = '!canAddCar'>Add cars</button>
+<!-- <button [disabled] = '!canAddCar'>Add cars</button> -->
+<button (click)="addCar()">Add cars</button>
+<div>{{addCarStatus}}</div>
 <hr>
 <app-car></app-car>
+<hr>
+<input type="text" (keyup)="onKeyUp($event)">
+<div>{{inputText}}</div>
