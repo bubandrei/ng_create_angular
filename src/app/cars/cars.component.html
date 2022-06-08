@@ -10,6 +10,11 @@
 </ng-template>
 <hr>
 <app-car *ngFor="let car of cars"></app-car>
+<ul>
+    <li *ngFor="let item of items">
+        <b>{{item.id}}-{{item.name}}</b>
+    </li>
+</ul>
 <hr>
 
 <!-- <div>{{addCarStatus}}</div> -->

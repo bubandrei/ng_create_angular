@@ -13,6 +13,7 @@ export class CarsComponent {
   carName = '';
   addCarStatus = false;
   cars: [string, string, string] = ['Ford', 'Audi', 'BMW'];
+  items =[{id:1, name:111},{id:2, name:222},{id:33, name:333}]
 
   constructor() {
     // setTimeout(() => {
@@ -30,6 +31,8 @@ export class CarsComponent {
   // }
   addCar() {
     this.addCarStatus = true;
+    this.cars.push(this.carName);
+    this.carName='';
   };
 
 }
