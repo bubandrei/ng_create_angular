@@ -8,5 +8,7 @@
 <app-car></app-car>
 <hr>
 <!-- <input type="text" (input)="onKeyUp($event)"> -->
-<input type="text" #myInp (input)="onKeyUp(myInp.value)">
+<!-- <input type="text" #myInp (input)="onKeyUp(myInp.value)"> -->
+<input type="text" (keyup.enter)="onKeyUp($event)">
+
 <div>{{inputText}}</div>
