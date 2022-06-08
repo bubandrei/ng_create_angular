@@ -9,5 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class CarComponent {
   carName: string = 'Ford';
   carYear: number = 2021;
+  getName(){
+    return this.carName;
+  }
 
 }
