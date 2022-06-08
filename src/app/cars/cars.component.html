@@ -4,8 +4,11 @@
 <!-- <button [disabled] = '!canAddCar'>Add cars</button> -->
 <input type="text" [(ngModel)]="carName">
 <button (click)="addCar()">Add cars</button>
-<div *ngIf="!addCarStatus">Car not add</div>
-<div *ngIf="addCarStatus">Car add</div>
+<div *ngIf="!addCarStatus; else success">Car not add</div>
+<ng-template #success>
+    <div>Car add</div>
+</ng-template>
+
 
 <!-- <div>{{addCarStatus}}</div> -->
 <hr>
