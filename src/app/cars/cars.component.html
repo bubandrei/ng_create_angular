@@ -2,14 +2,18 @@
 <app-car></app-car>
 <app-car></app-car> -->
 <!-- <button [disabled] = '!canAddCar'>Add cars</button> -->
+<input type="text" [(ngModel)]="carName">
 <button (click)="addCar()">Add cars</button>
-<div>{{addCarStatus}}</div>
+<div *ngIf="!addCarStatus">Car not add</div>
+<div *ngIf="addCarStatus">Car add</div>
+
+<!-- <div>{{addCarStatus}}</div> -->
 <hr>
 <app-car></app-car>
 <hr>
 <!-- <input type="text" (input)="onKeyUp($event)"> -->
 <!-- <input type="text" #myInp (input)="onKeyUp(myInp.value)"> -->
-<div>
+<!-- <div>
     <input type="text" (keyup.enter)="onKeyUp($event)">
 </div>
 <div>
@@ -17,4 +21,4 @@
 </div>
 
 
-<div>{{inputText}}</div>
+<div>{{inputText}}</div> -->
