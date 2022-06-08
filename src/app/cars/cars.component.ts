@@ -12,6 +12,7 @@ export class CarsComponent {
   // inputText = 'Default text';
   carName = '';
   addCarStatus = false;
+  cars: [string, string, string] = ['Ford', 'Audi', 'BMW'];
 
   constructor() {
     // setTimeout(() => {

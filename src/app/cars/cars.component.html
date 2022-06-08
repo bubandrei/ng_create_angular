@@ -8,12 +8,14 @@
 <ng-template #success>
     <div>Car add</div>
 </ng-template>
-
+<hr>
+<app-car *ngFor="let car of cars"></app-car>
+<hr>
 
 <!-- <div>{{addCarStatus}}</div> -->
-<hr>
+<!-- <hr>
 <app-car></app-car>
-<hr>
+<hr> -->
 <!-- <input type="text" (input)="onKeyUp($event)"> -->
 <!-- <input type="text" #myInp (input)="onKeyUp(myInp.value)"> -->
 <!-- <div>
