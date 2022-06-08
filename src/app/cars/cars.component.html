@@ -9,6 +9,12 @@
 <hr>
 <!-- <input type="text" (input)="onKeyUp($event)"> -->
 <!-- <input type="text" #myInp (input)="onKeyUp(myInp.value)"> -->
-<input type="text" (keyup.enter)="onKeyUp($event)">
+<div>
+    <input type="text" (keyup.enter)="onKeyUp($event)">
+</div>
+<div>
+    <input type="text" [(ngModel)]="inputText">
+</div>
+
 
 <div>{{inputText}}</div>

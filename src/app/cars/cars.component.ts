@@ -9,7 +9,7 @@ export class CarsComponent {
 
   // canAddCar: boolean = false;
   addCarStatus = '';
-  inputText = '';
+  inputText = 'Default text';
 
   constructor() {
     // setTimeout(() => {
