@@ -9,13 +9,19 @@
     <div>Car add</div>
 </ng-template>
 <hr>
-<app-car *ngFor="let car of cars"></app-car>
+<!-- <app-car *ngFor="let car of cars"></app-car> -->
 <ul>
+    <li *ngFor="let car of cars; let idx = 'index' ">
+        <span [ngStyle]="{backgroundColor:(idx+1)%2 === 0? 'yellow':'green'}"><b>{{idx + 1}}-{{car}}</b></span>
+    </li>
+</ul>
+<hr>
+<!-- <ul>
     <li *ngFor="let item of items; let idx = 'index' ">
         <b>{{idx + 1}}-{{item.name}}</b>
     </li>
 </ul>
-<hr>
+<hr> -->
 
 <!-- <div>{{addCarStatus}}</div> -->
 <!-- <hr>
