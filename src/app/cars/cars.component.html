@@ -18,6 +18,11 @@
     </li>
 </ul>
 <hr>
+<ul>
+    <li *ngFor="let item of items; let idx = 'index' ">
+        <b>{{idx + 1}}-{{item}}</b>
+    </li>
+</ul>
 <!-- <ul>
     <li *ngFor="let item of items; let idx = 'index' ">
         <b>{{idx + 1}}-{{item.name}}</b>
