@@ -12,7 +12,9 @@
 <!-- <app-car *ngFor="let car of cars"></app-car> -->
 <ul>
     <li *ngFor="let car of cars; let idx = 'index' ">
-        <span [ngStyle]="{backgroundColor:(idx+1)%2 === 0? 'yellow':'green'}"><b>{{idx + 1}}-{{car}}</b></span>
+        <span [ngStyle]="{backgroundColor:(idx+1)%2 === 0? 'yellow':'green'}"
+        [ngClass]="{'bigText': setBigText(car)}"
+        ><b>{{idx + 1}}-{{car}}</b></span>
     </li>
 </ul>
 <hr>
