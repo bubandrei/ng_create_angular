@@ -1,0 +1,48 @@
+<!-- <p>cars works!</p>
+<app-car></app-car>
+<app-car></app-car> -->
+<!-- <button [disabled] = '!canAddCar'>Add cars</button> -->
+<input type="text" [(ngModel)]="carName">
+<button (click)="addCar()">Add cars</button>
+<div *ngIf="!addCarStatus; else success">Car not add</div>
+<ng-template #success>
+    <div>Car add</div>
+</ng-template>
+<hr>
+<!-- <app-car *ngFor="let car of cars"></app-car> -->
+<ul>
+    <li *ngFor="let car of cars; let idx = 'index' ">
+        <span [ngStyle]="{backgroundColor:(idx+1)%2 === 0? 'yellow':'green'}"
+        [ngClass]="{'bigText': setBigText(car)}"
+        ><b>{{idx + 1}}-{{car}}</b></span>
+    </li>
+</ul>
+<hr>
+<ul>
+    <li *ngFor="let date of dates; let idx = 'index' ">
+        <!-- <b>{{idx + 1}}-{{date | date:'medium'}}</b> -->
+        <b>{{idx + 1}}-{{date | uppercase}}</b>
+    </li>
+</ul>
+<!-- <ul>
+    <li *ngFor="let item of items; let idx = 'index' ">
+        <b>{{idx + 1}}-{{item.name}}</b>
+    </li>
+</ul>
+<hr> -->
+
+<!-- <div>{{addCarStatus}}</div> -->
+<!-- <hr>
+<app-car></app-car>
+<hr> -->
+<!-- <input type="text" (input)="onKeyUp($event)"> -->
+<!-- <input type="text" #myInp (input)="onKeyUp(myInp.value)"> -->
+<!-- <div>
+    <input type="text" (keyup.enter)="onKeyUp($event)">
+</div>
+<div>
+    <input type="text" [(ngModel)]="inputText">
+</div>
+
+
+<div>{{inputText}}</div> -->
