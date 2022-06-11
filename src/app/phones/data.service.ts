@@ -1,6 +1,6 @@
 export class DataService {
 
-    private data: string[] = ["Apple iPhone XR", "Samsung Galaxy S9", "Nokia 9"];
+    private data: string[] = ["Apple 13 Pro", "Samsung S30", "Apple 12 Pro"];
 
     getData(): string[] {
 
