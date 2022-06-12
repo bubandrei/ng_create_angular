@@ -1,3 +1,7 @@
-<input type="text" [(ngModel)]='carName'>
+<!-- <input type="text" [(ngModel)]='carName'>
 <input type="text" [(ngModel)]='carYear'>
-<button (click)="addCar()">Add Car</button>
+<button (click)="addCar()">Add Car</button> -->
+
+<input type="text" #newName>
+<input type="text" [(ngModel)]='carYear'>
+<button (click)="addCar(newName)">Add Car</button>

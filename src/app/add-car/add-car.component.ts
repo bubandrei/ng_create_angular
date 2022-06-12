@@ -6,16 +6,16 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./add-car.component.css']
 })
 export class AddCarComponent implements OnInit {
-  carName = '';
+
   carYear = 2017;
   @Output() addCarItem = new EventEmitter<{ name: string, year: number }>()
 
-  addCar() {
+  addCar(newName: HTMLInputElement) {
     this.addCarItem.emit({
-      name: this.carName,
+      name: newName.value,
       year: this.carYear
     })
-    this.carName = '';
+    newName.value = '';
     this.carYear = 2017;
   }
 
