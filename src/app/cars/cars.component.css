@@ -1,7 +1,4 @@
-.bigText{
-    font-size: large;
-    color: aqua;
+div{
+  font-size: 30px;
 }
-body{
-    background-color: antiquewhite;
-}
+

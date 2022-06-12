@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CarsComponent } from './cars/cars.component';
 import { CarComponent } from './car/car.component';
 import { FormsModule } from '@angular/forms';
+import { AddCarComponent } from './add-car/add-car.component';
 // import { PhoneComponent } from './phones/phones.component';
 
 
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     CarsComponent,
     CarComponent,
+    AddCarComponent,
     // PhoneComponent
   ],
   imports: [

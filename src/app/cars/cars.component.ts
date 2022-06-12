@@ -1,16 +1,16 @@
 // import { style } from "@angular/animations";
-import { Component } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: 'app-cars',
   templateUrl: './cars.component.html',
-  styleUrls: ['./cars.component.css']
+  styleUrls: ['./cars.component.css'],
+  // encapsulation: ViewEncapsulation.None
 
 })
 
 export class CarsComponent {
-  carName = '';
-  carYear = 2017;
+
 
   cars = [{
     name: 'Honda',
@@ -23,10 +23,8 @@ export class CarsComponent {
     year: 2022
   }]
 
-  addCar() {
-    this.cars.push({ name: this.carName, year: this.carYear });
-    this.carName = '';
-    // this.carYear = 2017;
+  updateCarList(car: { name: string, year: number }) {
+    this.cars.push(car);
   }
   constructor() {
 
