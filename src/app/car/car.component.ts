@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-car',
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class CarComponent {
-  carName: string = 'Ford';
-  carYear: number = 2021;
-  getName(){
-    return this.carName;
-  }
+
+  @Input()
+  carItem!: { name: String; year: Number; };
 
 }
+function carItem(carItem: any) {
+  throw new Error('Function not implemented.');
+}
+

@@ -1,31 +1,31 @@
-import { Component} from '@angular/core';
-import {DataService} from './data.service'
+// import { Component} from '@angular/core';
+// import {DataService} from './data.service'
 
-@Component({
-  selector: 'app-phones',
-  template: `<div class="panel">
-  <div><input [(ngModel)]="name" placeholder = "Модель" />
-      <button (click)="addItem(name)">Добавить</button>
-  </div>
-  <table>
-      <tr *ngFor="let item of items">
-          <td>{{item}}</td>
-      </tr>
-  </table>
-</div>`,
-  providers: [DataService]
-})
-export class PhoneComponent{ 
+// @Component({
+//   selector: 'app-phones',
+//   template: `<div class="panel">
+//   <div><input [(ngModel)]="name" placeholder = "Модель" />
+//       <button (click)="addItem(name)">Добавить</button>
+//   </div>
+//   <table>
+//       <tr *ngFor="let item of items">
+//           <td>{{item}}</td>
+//       </tr>
+//   </table>
+// </div>`,
+//   providers: [DataService]
+// })
+// export class PhoneComponent{ 
       
-  items: string[] = [];
-  name: string = "";
-  constructor(private dataService: DataService){}
+//   items: string[] = [];
+//   name: string = "";
+//   constructor(private dataService: DataService){}
     
-  addItem(name: string){
+//   addItem(name: string){
         
-      this.dataService.addData(name);
-  }
-  ngOnInit(){
-      this.items = this.dataService.getData();
-  }
-}
+//       this.dataService.addData(name);
+//   }
+//   ngOnInit(){
+//       this.items = this.dataService.getData();
+//   }
+// }
