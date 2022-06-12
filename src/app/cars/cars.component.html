@@ -1,4 +1,9 @@
 <div>Form for add new car</div>
+<hr>
 <app-add-car (addCarItem)="updateCarList($event)"></app-add-car>
-
-<app-car *ngFor="let car of cars" [carItem]="car"></app-car>
+<hr>
+<div class="list-group">
+  <app-car *ngFor="let car of cars" [carItem]="car">
+    <div style="color: red; ">SOLD</div>
+  </app-car>
+</div>
