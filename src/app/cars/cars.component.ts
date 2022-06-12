@@ -24,7 +24,9 @@ export class CarsComponent {
   }]
 
   addCar() {
-    this.cars.push({ name: this.carName, year: this.carYear })
+    this.cars.push({ name: this.carName, year: this.carYear });
+    this.carName = '';
+    // this.carYear = 2017;
   }
   constructor() {
 
